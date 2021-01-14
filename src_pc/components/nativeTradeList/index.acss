@@ -1,0 +1,4 @@
+.virtual-list-box {
+    overflow: auto;
+    height: 800px;
+}

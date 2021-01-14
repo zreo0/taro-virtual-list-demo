@@ -1,0 +1,10 @@
+<block>
+    <view class="test-native-card" onTap="onCardClick" style={{ height: '300px' }}>
+        <block>
+            <view>这是第{{ tradeIndex }}笔订单</view>
+            <view>{{ trade.tid }}</view>
+            <view>{{ trade.wayBill && trade.wayBill[0] && trade.wayBill[0].voice }}</view>
+            <view>end</view>
+        </block>
+    </view>
+</block>

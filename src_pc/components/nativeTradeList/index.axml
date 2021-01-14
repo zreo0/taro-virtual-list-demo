@@ -1,0 +1,16 @@
+<block>
+    <view class="test-native-trade-list">
+        <view>native1 list</view>
+        <view>{{ text }}</view>
+        <block a:if="{{trades.length == 0}}">
+            <view>none</view>
+        </block>
+        <block a:if="{{trades.length != 0}}">
+            <view class="virtual-list-box">
+                <view>
+                    <view style="{{ height: '300px' }}" a:for="{{trades}}" a:for-item="trade" a:for-index="index" trade="{{trade}}" tradeIndex="{{index}}">{{ trade.wayBill && trade.wayBill[0] && trade.wayBill[0].voice }}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</block>
